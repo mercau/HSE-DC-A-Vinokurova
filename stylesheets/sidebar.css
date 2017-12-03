@@ -1,0 +1,17 @@
+.sidebar {
+  position: fixed;
+  width: 300px;
+  background-color: olive;
+  z-index: 1;
+  opacity: .1;
+  transition: all .2s ease-out;
+}
+
+.sidebar:hover {
+  opacity: 1;
+}
+
+.sidebar a {
+  text-decoration: none;
+  cursor: pointer;
+}
