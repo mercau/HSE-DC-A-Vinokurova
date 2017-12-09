@@ -1,10 +1,18 @@
 .sidebar {
   position: fixed;
+  top: 0;
+  box-sizing: border-box;
   width: 300px;
-  background-color: olive;
+  /*background-color: olive;*/
   z-index: 1;
   opacity: .1;
   transition: all .2s ease-out;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  padding: 30px;
+  margin-top: 18px;
+  margin-left: 20px;
 }
 
 .sidebar:hover {
@@ -14,4 +22,19 @@
 .sidebar a {
   text-decoration: none;
   cursor: pointer;
+  line-height: 2px;
+  white-space: pre-wrap;
+}
+
+.sidebar strong {
+  font-weight: bold;
+}
+
+ul.grey{
+  color: rgba(0, 0, 0, .4);
+  padding: 9px;
+}
+
+.sidebar ul + ul  {
+  line-height: 25px;
 }
