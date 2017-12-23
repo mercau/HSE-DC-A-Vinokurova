@@ -4,7 +4,7 @@
   background-position: top center;
   background-repeat: no-repeat;*/
 
-article {
+article > * {
   width: 700px;
   margin: 0 auto;
 }
@@ -123,4 +123,36 @@ article blockquote::before {
   width: 3px;
   height: 100%;
   background: black;
+}
+
+
+@media all and (max-width: 1020px) {
+  article img {
+    width: 100%;
+  }
+}
+
+
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  article > * {
+    width: calc(100% - 40px);
+  }
+}
+
+
+@media all and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  body {
+    min-width: 320px;
+  }
+
+  article > * {
+    width: calc(100% - 40px);
+  }
+}
+
+
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .sidebar {
+    display: none;
+  }
 }

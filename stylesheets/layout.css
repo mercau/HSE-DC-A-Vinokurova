@@ -2,6 +2,7 @@ body {
   font-family: 'PT Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 768px;
 }
 
 * {
@@ -10,4 +11,10 @@ body {
 
 a:visited {
   color: inherit;
+}
+
+.share {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
