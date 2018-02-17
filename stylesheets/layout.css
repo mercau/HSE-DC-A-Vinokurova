@@ -6,12 +6,13 @@ body {
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-a:visited {
+/* a:visited {
   color: inherit;
-}
+} */
 
 .share {
   position: fixed;
